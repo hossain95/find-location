@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location find</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <div style="color: white; margin-top: 20px;">
+                <h3><i class="material-icons" style="font-size:40px;color:tomato;">edit_location</i>Find IP Location</h3>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="text-center" style="color: white; padding: 40px;">
+            <h1 id="displayIp"></h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="left-div col-sm-12 col-md-6 col-lg-6 text-center">
+                <h1 style="color: white;">An IP to find the</h1>
+                <h3  id="welcome" style="margin-top: 20px;">
+                    <a href="#" style="color: white;" class="typewrite" data-period="2000" data-type='[ "City","Region", "Country", "Latitude / Longitude", "Time Zone"]'>
+                    <span class="wrap"></span>
+                    </a>
+                </h3>
+            </div>
+            <div class="right-div col-sm-12 col-md-6 col-lg-6">
+                <div style="margin-top: 20px;">
+                    <form id="form1">
+                        <input class="form-control" type="text" id="input" placeholder="ip address">
+                        <input class="form-control btn btn-success" type="submit" value="find">
+                    </form>
+                </div>
+                <div class="output" id="output" style="display: none;">
+                    <table class="table table-hover">
+                        <tbody>
+                            <tr>
+                                <td>IP Address</td>
+                                <td id="ipaddress"></td>
+                            </tr>
+                            <tr>
+                                <td>City</td>
+                                <td id="city"></td>
+                            </tr>
+                            <tr>
+                                <td>Region</td>
+                                <td id="region"></td>
+                            </tr>
+                            <tr>
+                                <td>Capital</td>
+                                <td id="capital"></td>
+                            </tr>
+                            <tr>
+                                <td>Country</td>
+                                <td id="country"></td>
+                            </tr>
+                            <tr>
+                                <td>Postal Code</td>
+                                <td id="postalcode"></td>
+                            </tr>
+                            <tr>
+                                <td>Latitude / Longitude</td>
+                                <td id="latlon"></td>
+                            </tr>
+                            <tr>
+                                <td>Time Zone</td>
+                                <td id="timezone"></td>
+                            </tr>
+                            <tr>
+                                <td>Calling Code</td>
+                                <td id="callingcode"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="program/main.js"></script>
+    <script src="program/animation.js"></script>
+</body>
+</html>
